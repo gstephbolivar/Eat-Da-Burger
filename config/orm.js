@@ -56,10 +56,13 @@ const orm = {
   update: (table, objColVals, condition, cb) => {
     let queryString = "UPDATE " + table;
 
+    // console.log(objColVals);
+
     queryString += " SET ";
     queryString += objToSql(objColVals);
     queryString += " WHERE ";
     queryString += condition;
+
 
     console.log(queryString);
     connection.query(queryString, function (err, result) {

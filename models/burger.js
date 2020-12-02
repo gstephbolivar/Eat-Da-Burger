@@ -14,6 +14,7 @@ const burger = {
     },
     update: function(objColVals, condition, cb){
         orm.update("burgers", objColVals, condition, function(res) {
+            // console.log(objColVals);
             cb(res);
         });
     }

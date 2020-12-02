@@ -30,7 +30,7 @@ router.get("/", function(req, res) {
     const condition = "id = " + req.params.id;
   
     console.log("condition", condition);
-  
+    console.log(req.body);
     burger.update({
       devoured: req.body.devoured
     }, condition, function(result) {
