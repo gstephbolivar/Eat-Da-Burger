@@ -6,7 +6,7 @@ const router = express.Router();
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-    cat.all(function(data) {
+    burger.all(function(data) {
       var hbsObject = {
         burgers: data
       };
@@ -27,7 +27,7 @@ router.get("/", function(req, res) {
   });
   
   router.put("/api/burgers/:id", function(req, res) {
-    var condition = "id = " + req.params.id;
+    const condition = "id = " + req.params.id;
   
     console.log("condition", condition);
   
