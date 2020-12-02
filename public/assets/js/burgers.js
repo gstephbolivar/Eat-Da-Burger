@@ -24,10 +24,10 @@ $(function () {
     event.preventDefault();
 
     let newBurger = {
-      name: $("#ca").val().trim(),
-      devoured: $("[name=devour]:checked").val().trim(),
+      name: $("#burger").val().trim(),
+      devoured: $("input[type=radio]:checked").val().trim(),
     };
-
+    console.log(newBurger);
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
