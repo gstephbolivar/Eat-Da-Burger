@@ -54,7 +54,7 @@ const orm = {
     });
   },
   update: (table, objColVals, condition, cb) => {
-    const queryString = "UPDATE " + table;
+    let queryString = "UPDATE " + table;
 
     queryString += " SET ";
     queryString += objToSql(objColVals);
