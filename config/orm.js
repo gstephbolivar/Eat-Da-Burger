@@ -36,7 +36,7 @@ const orm = {
     });
   },
   create: (table, cols, vals, cb) => {
-    const queryString = "INSERT INTO " + table;
+    let queryString = "INSERT INTO " + table;
 
     queryString += " (";
     queryString += cols.toString();
