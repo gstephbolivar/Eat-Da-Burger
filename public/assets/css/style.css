@@ -1,23 +1,49 @@
 body {
-    background-color: darkgoldenrod;
+  background-color: darkgoldenrod;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  background-color: transparent;
 }
 
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
+  padding: 5px;
+  margin: 5px;
+  background: transparent;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.create-form{
+    display: inline-block;
+}
+
+
+.jumbotron {
+  background-color: transparent;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  /* background: aqua; */
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
