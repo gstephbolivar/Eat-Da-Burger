@@ -4,7 +4,9 @@
 
 ## Description
 
-
+AS a hungry burger patron
+I WANT to be able to input and add a burger
+SO THAT I can eat it and no longer be hungry
 
  
 * [Installation](#installation)
@@ -28,6 +30,7 @@ Fork repository at [gstephbolivar github](https://github.com/gstephbolivar/burge
 
 ## Usage
 
+This [application](https://lit-escarpment-25784.herokuapp.com/) allows for a user to be able to input a burger, which then will be displayed on the left hand side of the screen to "Enjoy me fresh!" section. Once the eat up button has been pressed then the burger will be displayed on the right side of the screen under the "That was delicious!" section. Once the burger has been added, it is saved in our database with it's own id, and devoured will go from false to true once the "eat up!" button has been pressed. 
 
 ## Contributing
 
@@ -35,12 +38,16 @@ A user can contribute to this application by changing the styling of the applica
 
 ## Test
 
-[]()
+![Burger Demo Gif](public/images/eatdaburger.gif)
 
 ## Credits
 
 I credit the following people and websites for assistance on this application:
 
+[Bootstrap](https://getbootstrap.com/)
+[Linda DuHadway Youtube Tutorial](https://www.youtube.com/watch?v=N8ZMzN40q0g)
+[Google Fonts](https://fonts.google.com/)
+[Stackoverflow](https://stackoverflow.com/questions/8097744/how-do-i-center-this-form-in-css)
 
 ## Questions
 
