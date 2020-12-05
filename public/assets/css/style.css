@@ -1,9 +1,9 @@
 body {
   background-color: darkgoldenrod;
+  font-family: 'Bangers', cursive;
 }
 
-h1,
-h2 {
+h1 {
   text-align: center;
 }
 
@@ -12,10 +12,19 @@ ul {
   background-color: transparent;
 }
 
+
 li {
   padding: 5px;
   margin: 5px;
   background: transparent;
+}
+
+.burgers-list , #burger-name {
+    font-size: x-large;
+}
+
+#burger-add {
+    margin-right: auto; 
 }
 
 .center{

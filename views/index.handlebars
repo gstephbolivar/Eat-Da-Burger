@@ -8,17 +8,18 @@
         <div class="form-group">
             <label id="burger-name" for="burger">Burger Name:</label>
             <input type="text" id="burger" name="name">
+            <button id="burger-add" type="submit">Add Burger</button>
         </div>
 
 
-        <button type="submit">Add Burger</button>
+        {{!-- <button id="burger-add" type="submit">Add Burger</button> --}}
     </form>
     <div class="row">
         <div class="col-sm-6">
             <div class="jumbotron">
                 <h2>Enjoy me fresh!</h2>
                 <hr class="my-4">
-                <ul>
+                <ul class="burgers-list">
                     {{#each burgers}}
                     {{#unless devoured}}
                     {{> burgers/burger-block devoured=true}}
@@ -35,7 +36,7 @@
             <div class="jumbotron">
                 <h2>Another one...?</h2>
                 <hr class="my-4">
-                <ul>
+                <ul class="burgers-list">
                     {{#each burgers}}
                     {{#if devoured}}
                     {{> burgers/burger-block devoured=false}}
