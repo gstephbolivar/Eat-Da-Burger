@@ -44,10 +44,10 @@ A user can contribute to this application by changing the styling of the applica
 
 I credit the following people and websites for assistance on this application:
 
-[Bootstrap](https://getbootstrap.com/)
-[Linda DuHadway Youtube Tutorial](https://www.youtube.com/watch?v=N8ZMzN40q0g)
-[Google Fonts](https://fonts.google.com/)
-[Stackoverflow](https://stackoverflow.com/questions/8097744/how-do-i-center-this-form-in-css)
+* [Bootstrap](https://getbootstrap.com/)
+* [Linda DuHadway Youtube Tutorial](https://www.youtube.com/watch?v=N8ZMzN40q0g)
+* [Google Fonts](https://fonts.google.com/)
+* [Stackoverflow](https://stackoverflow.com/questions/8097744/how-do-i-center-this-form-in-css)
 
 ## Questions
 
