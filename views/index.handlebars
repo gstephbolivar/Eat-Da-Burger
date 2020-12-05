@@ -1,7 +1,8 @@
+{{!-- Header of the webpage with the burger gif --}}
 <h1>Eat-Da-Burger</h1>
 <img class="center" src="../images/burger-dribble4.gif" alt="Burger gif that opens and reconstructs the burger">
 
-
+{{!-- container that holds form to add a new burger and burgers added and eaten  --}}
 <div class="container">
     <div class="row create-form">
         <div class="col-sm-12">
@@ -15,7 +16,7 @@
             </form>
         </div>
     </div>
-
+    {{!-- after burger is created, added here to be eaten --}}
     <div class="row">
         <div class="col-sm-6">
             <div class="jumbotron">
@@ -30,13 +31,10 @@
                 </ul>
             </div>
         </div>
-
-
-
-
+        {{!-- once burger it is eaten it is added here --}}
         <div class="col-sm-6">
             <div class="jumbotron">
-                <h2>Another one...?</h2>
+                <h2>That was delicious!</h2>
                 <hr class="my-4">
                 <ul class="burgers-list">
                     {{#each burgers}}

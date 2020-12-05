@@ -13,7 +13,6 @@ $(function () {
       type: "PUT",
       data: newDevourState,
     }).then(function () {
-      console.log("changed devoured to", newDevoured);
       // Reload the page to get the updated list
       location.reload();
     });
@@ -25,15 +24,12 @@ $(function () {
 
     let newBurger = {
       name: $("#burger").val().trim(),
-      // devoured: $("input[type=radio]:checked").val().trim(),
     };
-    console.log(newBurger);
     // Send the POST request.
     $.ajax("/api/burgers", {
       type: "POST",
       data: newBurger,
     }).then(function () {
-      console.log("created new burger");
       // Reload the page to get the updated list
       location.reload();
     });

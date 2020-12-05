@@ -1,3 +1,4 @@
+// required connection.js file
 const connection = require("../config/connection");
 // Helper function loops through and creates an array of question marks and turns it into a string
 function printQuestionMarks(num) {
@@ -24,7 +25,7 @@ function objToSql(ob) {
   }
   return arr.toString();
 }
-
+// setting mapping for all, create and update db
 const orm = {
   all: (tableInput, cb) => {
     const queryString = "SELECT * FROM " + tableInput + ";";
@@ -45,7 +46,6 @@ const orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
-    console.log(queryString);
     connection.query(queryString, vals, function (err, result) {
       if (err) {
         throw err;
@@ -56,7 +56,6 @@ const orm = {
   update: (table, objColVals, condition, cb) => {
     let queryString = "UPDATE " + table;
 
-    // console.log(objColVals);
 
     queryString += " SET ";
     queryString += objToSql(objColVals);
@@ -64,7 +63,6 @@ const orm = {
     queryString += condition;
 
 
-    console.log(queryString);
     connection.query(queryString, function (err, result) {
       if (err) {
         throw err;
@@ -73,5 +71,5 @@ const orm = {
     });
   },
 };
-
+// exporting orm 
 module.exports = orm;

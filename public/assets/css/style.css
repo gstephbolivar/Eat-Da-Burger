@@ -1,6 +1,7 @@
+/* set standard background and font for website */
 body {
   background-color: darkgoldenrod;
-  font-family: 'Bangers', cursive;
+  font-family: "Bangers", cursive;
 }
 
 h1 {
@@ -12,30 +13,31 @@ ul {
   background-color: transparent;
 }
 
-
 li {
   padding: 5px;
   margin: 5px;
   background: transparent;
 }
 
-.burgers-list , #burger-name {
-    font-size: x-large;
+.burgers-list,
+#burger-name {
+  font-size: x-large;
 }
 
 #burger-add {
-    margin-right: auto; 
+  margin-right: auto;
 }
 
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-.create-form{
-    text-align: center;
+/* align form to center of the webpage */
+.create-form {
+  text-align: center;
 }
 
 .jumbotron {

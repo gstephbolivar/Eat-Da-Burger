@@ -1,22 +1,21 @@
+// require express
 const express = require("express");
-
+// require burger orm
 const burger = require("../models/burger");
-
+// using routes from express
 const router = express.Router();
 
-// Create all our routes and set up logic within those routes where required.
+// route for initial homepage
 router.get("/", function(req, res) {
     burger.all(function(data) {
       var hbsObject = {
         burgers: data
       };
-      console.log(hbsObject);
       res.render("index", hbsObject);
     });
   });
-  
+//   route for new burger
   router.post("/api/burgers", function(req, res) {
-      console.log(req.body);
     burger.create([
       "burger_name", "devoured"
     ], [
@@ -26,12 +25,10 @@ router.get("/", function(req, res) {
       res.json({ id: result.insertId });
     });
   });
-  
+//   route for eating burger
   router.put("/api/burgers/:id", function(req, res) {
     const condition = "id = " + req.params.id;
-  
-    console.log("condition", condition);
-    console.log(req.body);
+
     burger.update({
       devoured: req.body.devoured
     }, condition, function(result) {
@@ -43,5 +40,5 @@ router.get("/", function(req, res) {
       }
     });
   });
-
+// export routes
 module.exports = router;
