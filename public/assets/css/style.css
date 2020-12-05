@@ -35,9 +35,8 @@ li {
 }
 
 .create-form{
-    display: inline-block;
+    text-align: center;
 }
-
 
 .jumbotron {
   background-color: transparent;
@@ -50,7 +49,6 @@ li {
 .create-update-form {
   padding: 5px;
   margin: 5px;
-  /* background: aqua; */
 }
 
 .form-group {
